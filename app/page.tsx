@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -51,11 +50,6 @@ export default function Home() {
     }
   };
 
-  const handleError = (error: Error) => {
-    console.error("Error fetching weather data:", error);
-    setError("Failed to fetch weather data. Please try again.");
-    setWeather(null);
-};
 
   return (
     <div className={`min-h-screen p-4 flex items-center justify-center`}>
